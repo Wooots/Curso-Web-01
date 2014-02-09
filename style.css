@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div::after,
+p::after,
+header::after,
+footer::after,
+nav::after,
+section::after,
+hgroup::after,
+article::after,
+details::after,
+figure::after,
+li::after,
+aside::after,
+form::after,
+.clear::after {
+	clear: both;
+	content: " ";
+	display: block;
+	visibility: hidden;
+}
+
+body {
+	font-family: Arial;
+	font-size: 13px;
+	/*font: 600 30px "Open Sans",Arial;*/
+}
+
+header {
+	background: black;
+	color: white;
+	padding: 10px 15px;
+	min-width: 650px;
+}
+
+header figure {
+	float: left;
+	width: 200px;
+}
+
+header .nav {
+	float: right;
+}
+
+header .nav a {
+	color: white;
+	display: inline-block;
+	margin: 0 10px;
+	transition: color .4s ease-in-out;
+}
+
+header .nav a:hover {
+	text-decoration: underline;
+	color: #013ADF;
+	cursor: pointer;
+}
